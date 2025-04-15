@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <div className="relative w-28 h-8">
-              <Image src="/image/logo.png" alt="Nexcent" width="154" height="24" />
+              <Image src="/image/logodam.png" alt="Nexcent" width="154" height="24" />
             </div>
           </div>
           
@@ -470,7 +470,7 @@ export default function Home() {
           <div className="col-span-1">
             <div className="relative w-32 h-8">
               <Image 
-                src="/image/logo2.png" 
+                src="/image/logodam2.png" 
                 alt="Nexcent" 
                 width="154" 
                 height="24"
