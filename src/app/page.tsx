@@ -1,8 +1,15 @@
 // pages/index.js
+"use client"
 import Head from 'next/head';
 import Image from 'next/image';
+import React, {useState} from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   const icons=[
     {
         icon:<Image src="/image/pogo.png" alt="logo" layout="fill" objectFit="contain" />,
@@ -36,7 +43,7 @@ export default function Home() {
 
       {/* Header/Navbar */}
       <header className="bg-white py-4 px-6 md:px-12">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex flex-row justify-between items-center">
           <div className="flex items-center">
             <div className="relative w-28 h-8">
               <Image src="/image/Logodam.png" alt="Nexcent" width="154" height="24" />
@@ -57,12 +64,67 @@ export default function Home() {
             <a href="#" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Sign Up</a>
           </div>
           
-          <button className="md:hidden">
+          {/* <button className="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </button>
+          </button> */}
+          <div onClick={toggleMenu} className="cursor-pointer md:hidden block">
+            {!isOpen?            
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>:
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 40 48"
+              fill="#000000"
+               className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 14H18H25"
+                stroke="#000000"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+              <path
+                d="M11 24H24H37"
+                stroke="#000000"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+              <path
+                d="M11 34H21H31"
+                stroke="#000000"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+            </svg>}
+          </div>
         </div>
+         {isOpen && <div className="md:hidden block absolute top-[63px] left-0 w-[100%] bg-[#2c2b29] text-white p-6 z-[5]">
+                <ul className="">
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">Home</a>
+                </li>
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">Service</a>
+                </li>
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">Features</a>
+                </li>
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">Product</a>
+                </li>
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">Testimonials</a>
+                </li>
+                <li className="py-2">
+                  <a href="#" className="hover:text-green-500">FAQ</a>
+                </li>
+                </ul>
+            </div>}
       </header>
 
       {/* Hero Section */}
