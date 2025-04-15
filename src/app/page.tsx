@@ -39,7 +39,14 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <div className="relative w-28 h-8">
-              <Image src="/image/logodam.png" alt="Nexcent" width="154" height="24" />
+              {/* <Image src="/image/logodam.png" alt="Nexcent" width="154" height="24" /> */}
+              <img
+                  src="/images/logodam.png"
+                  width={154}
+                  height={24}
+                  className="w-full h-auto"
+                  alt="Zekardo"
+              />
             </div>
           </div>
           
@@ -469,13 +476,20 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
             <div className="relative w-32 h-8">
-              <Image 
+              {/* <Image 
                 src="/image/logodam2.png" 
                 alt="Nexcent" 
                 width="154" 
-                height="24"
+                height="24" */}
                 // layout="fill"
                 // objectFit="contain" 
+              {/* /> */}
+              <img
+                  src="/images/logodam2.png"
+                  width={154}
+                  height={24}
+                  className="w-full h-auto"
+                  alt="Zekardo"
               />
             </div>
             <p className="mt-4 text-gray-400">
