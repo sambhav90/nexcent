@@ -39,14 +39,14 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <div className="relative w-28 h-8">
-              {/* <Image src="/image/logodam.png" alt="Nexcent" width="154" height="24" /> */}
-              <img
+              <Image src="/public/image/logodam.png" alt="Nexcent" width="154" height="24" />
+              {/* <img
                   src="/image/logodam.png"
                   width={154}
                   height={24}
                   className="w-full h-auto"
                   alt="nexcent"
-              />
+              /> */}
             </div>
           </div>
           
@@ -483,7 +483,7 @@ export default function Home() {
                 height="24"
               /> */}
               <img
-                  src="/image/logodam2.png"
+                  src="/public/image/logodam2.png"
                   width={154}
                   height={24}
                   className="w-full h-auto"
