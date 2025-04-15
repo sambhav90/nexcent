@@ -41,11 +41,11 @@ export default function Home() {
             <div className="relative w-28 h-8">
               {/* <Image src="/image/logodam.png" alt="Nexcent" width="154" height="24" /> */}
               <img
-                  src="/images/logodam.png"
+                  src="/image/logodam.png"
                   width={154}
                   height={24}
                   className="w-full h-auto"
-                  alt="Zekardo"
+                  alt="nexcent"
               />
             </div>
           </div>
@@ -480,16 +480,14 @@ export default function Home() {
                 src="/image/logodam2.png" 
                 alt="Nexcent" 
                 width="154" 
-                height="24" */}
-                // layout="fill"
-                // objectFit="contain" 
-              {/* /> */}
+                height="24"
+              /> */}
               <img
-                  src="/images/logodam2.png"
+                  src="/image/logodam2.png"
                   width={154}
                   height={24}
                   className="w-full h-auto"
-                  alt="Zekardo"
+                  alt="nexcent"
               />
             </div>
             <p className="mt-4 text-gray-400">
