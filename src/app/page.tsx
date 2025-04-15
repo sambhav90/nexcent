@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <div className="relative w-28 h-8">
-              <Image src="/image/logo.png" alt="Nexcent" layout="fill" objectFit="contain" />
+              <Image src="/image/logo.png" alt="Nexcent" width="154" height="24" />
             </div>
           </div>
           
@@ -472,8 +472,10 @@ export default function Home() {
               <Image 
                 src="/image/logo2.png" 
                 alt="Nexcent" 
-                layout="fill"
-                objectFit="contain" 
+                width="154" 
+                height="24"
+                // layout="fill"
+                // objectFit="contain" 
               />
             </div>
             <p className="mt-4 text-gray-400">
