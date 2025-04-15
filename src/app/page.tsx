@@ -401,7 +401,7 @@ export default function Home() {
           <p className="text-gray-500">British Dragon Boat Racing Association</p>
         </div>
         
-        <div className="flex flex-wrap md:flex-nowrap items-center gap-5 md:gap-5 ">
+        <div className="flex flex-wrap items-center gap-3 md:gap-3 ">
           {icons && icons.slice(0, icons.length - 1).map((item, index) => (
             <div key={index} className="grayscale hover:grayscale-0 transition-all">
               <div className="relative w-16 h-8 md:w-20 md:h-10">
@@ -463,7 +463,7 @@ export default function Home() {
           </div>
 
           {/* Blog Card 2 */}
-          <div className="bg-white rounded-lg shadow-sm my-[80px] md:my-[0px]">
+          <div className="bg-white rounded-lg shadow-sm my-[150px] md:my-[0px]">
             <div className="relative h-48">
               <Image 
                 src="/image/2.png" 
